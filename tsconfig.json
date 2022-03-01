@@ -1,9 +1,15 @@
 {
-    "compilerOptions": { //编译选项
-        "target": "es2016", //配置编译目标代码的版本标准
-        "module": "commonjs", //配置编译目标使用的模块化标准
-        "lib": ["es2016"],
-        "outDir": "./dist",
-    },
-    "include": ["./src", "index.d.ts", "index.d.ts"]
+  "compilerOptions": {
+    //编译选项
+    "target": "es2016", //配置编译目标代码的版本标准
+    "module": "commonjs", //配置编译目标使用的模块化标准
+    "lib": ["es2016", "DOM"],
+    "outDir": "./dist",
+    "strictNullChecks": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./src", "index.d.ts", "index.d.ts"]
 }
